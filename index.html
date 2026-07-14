@@ -11,6 +11,7 @@
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%231b1b6b'/%3E%3Crect y='4' width='100' height='48' fill='%230068b0'/%3E%3Cpath d='M50 18 L85 49 L75 49 L75 85 L25 85 L25 49 L15 49 Z' fill='%231b1b6b' stroke='%23fff' stroke-width='3' stroke-linejoin='round'/%3E%3Crect x='43' y='57' width='14' height='27' fill='%230a7f92' stroke='%23fff' stroke-width='2.4'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.className += ' js';</script>
 </head>
 <body id="top">
 
@@ -44,8 +45,8 @@
     <ul class="nav-links">
       <li><a href="#welcome">Welcome</a></li>
       <li><a href="#inside">Step inside</a></li>
-      <li><a href="#approach">Our approach</a></li>
-      <li><a href="#care">Care &amp; team</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="#approach">Approach</a></li>
       <li><a href="#safeguarding">Safeguarding</a></li>
       <li><a href="#referrals">Referrals</a></li>
       <li><a class="btn" href="#contact">Enquire</a></li>
@@ -102,7 +103,7 @@
 
 <!-- ===== FACTS STRIP ===== -->
 <div class="facts">
-  <div class="wrap">
+  <div class="wrap" data-stagger>
     <div class="fact"><b>11–18</b><span>Young men &amp; women we care for</span></div>
     <div class="fact"><b>24/7</b><span>Waking, around-the-clock care</span></div>
     <div class="fact"><b>3</b><span>Private single bedrooms</span></div>
@@ -113,7 +114,7 @@
 <!-- ===== WELCOME ===== -->
 <section id="welcome">
   <div class="wrap">
-    <div class="split top">
+    <div class="split top" data-reveal>
       <div>
         <p class="eyebrow">Welcome</p>
         <h2>More than a placement.<br>A place to call home.</h2>
@@ -136,7 +137,7 @@
 <!-- ===== MANIFESTO ===== -->
 <section class="manifesto">
   <div class="wrap">
-    <div class="mani-grid">
+    <div class="mani-grid" data-reveal>
       <div>
         <p class="eyebrow">What every young person hears here</p>
         <h2 style="color:#fff;">You belong here.</h2>
@@ -160,7 +161,7 @@
 <!-- ===== STEP INSIDE (photo tour) ===== -->
 <section class="sec-cream" id="inside">
   <div class="wrap">
-    <div class="head">
+    <div class="head" data-reveal>
       <p class="eyebrow">Step inside</p>
       <h2>A real family home, finished with care</h2>
       <p class="lead" style="margin-top:22px;">Set on a quiet, tree-lined street, our home blends period
@@ -169,29 +170,29 @@
     </div>
 
     <!-- Living spaces -->
-    <div class="tour">
+    <div class="tour" data-reveal>
       <div class="tour-head">
         <div class="tour-label"><span class="t">Living spaces</span><span class="d">Room to relax &amp; be together</span></div>
         <div class="rail-nav"><button type="button" data-dir="-1" aria-label="Scroll left">‹</button><button type="button" data-dir="1" aria-label="Scroll right">›</button></div>
       </div>
       <div class="rail">
-        <figure class="slide"><img src="assets/photos/lounge-fire.jpg" alt="Lounge with fireplace, sofa and a shelf of books and games"><span class="cap-tag">Lounge</span></figure>
-        <figure class="slide"><img src="assets/photos/dining-clock.jpg" alt="Sitting and dining area with feature clock and fireplace"><span class="cap-tag">Sitting room</span></figure>
-        <figure class="slide"><img src="assets/photos/lounge-navy.jpg" alt="Second family lounge with a large sofa and rug"><span class="cap-tag">Family lounge</span></figure>
+        <figure class="slide"><img src="assets/photos/lounge-fire.jpg" data-cap="A lounge to unwind in — books, board games and a fire for winter evenings." alt="Lounge with fireplace, sofa and a shelf of books and games"><span class="cap-tag">Lounge</span></figure>
+        <figure class="slide"><img src="assets/photos/dining-clock.jpg" data-cap="Where the household gathers in the evenings to eat and spend time together." alt="Sitting and dining area with feature clock and fireplace"><span class="cap-tag">Sitting room</span></figure>
+        <figure class="slide"><img src="assets/photos/lounge-navy.jpg" data-cap="Soft sofas and space for everyone to relax together as a family." alt="Second family lounge with a large sofa and rug"><span class="cap-tag">Family lounge</span></figure>
       </div>
     </div>
 
     <!-- Kitchen -->
-    <div class="tour">
+    <div class="tour" data-reveal>
       <div class="tour-head">
         <div class="tour-label"><span class="t">The kitchen</span><span class="d">The heart of the home</span></div>
         <div class="rail-nav"><button type="button" data-dir="-1" aria-label="Scroll left">‹</button><button type="button" data-dir="1" aria-label="Scroll right">›</button></div>
       </div>
       <div class="rail">
-        <figure class="slide"><img src="assets/photos/kitchen-marble.jpg" alt="Modern kitchen with grey units and marble worktops"><span class="cap-tag">Marble worktops</span></figure>
-        <figure class="slide"><img src="assets/photos/kitchen-hob.jpg" alt="Kitchen with gas hob, glazed cabinets and appliances"><span class="cap-tag">Cooking together</span></figure>
-        <figure class="slide"><img src="assets/photos/kitchen-poster.jpg" alt="Kitchen window with the You Belong Here wall poster"><span class="cap-tag">“You belong here”</span></figure>
-        <figure class="slide"><img src="assets/photos/kitchen-wide.jpg" alt="Full view of the kitchen"><span class="cap-tag">Room to gather</span></figure>
+        <figure class="slide"><img src="assets/photos/kitchen-marble.jpg" data-cap="Marble worktops and room to learn to cook — everyday life skills that build independence." alt="Modern kitchen with grey units and marble worktops"><span class="cap-tag">Marble worktops</span></figure>
+        <figure class="slide"><img src="assets/photos/kitchen-hob.jpg" data-cap="Cooking together is part of the daily rhythm here." alt="Kitchen with gas hob, glazed cabinets and appliances"><span class="cap-tag">Cooking together</span></figure>
+        <figure class="slide"><img src="assets/photos/kitchen-poster.jpg" data-cap="On the wall where we eat: ‘You belong here. You matter. You are loved.’" alt="Kitchen window with the You Belong Here wall poster"><span class="cap-tag">“You belong here”</span></figure>
+        <figure class="slide"><img src="assets/photos/kitchen-wide.jpg" data-cap="The heart of the home — where every day begins and ends." alt="Full view of the kitchen"><span class="cap-tag">Room to gather</span></figure>
         <div class="slide note">
           <p>“You belong here. You matter. You are loved.”</p>
           <span>The words on our kitchen wall — where every day begins.</span>
@@ -200,30 +201,30 @@
     </div>
 
     <!-- Bedrooms -->
-    <div class="tour">
+    <div class="tour" data-reveal>
       <div class="tour-head">
         <div class="tour-label"><span class="t">Private bedrooms</span><span class="d">A room of their own to make their own</span></div>
         <div class="rail-nav"><button type="button" data-dir="-1" aria-label="Scroll left">‹</button><button type="button" data-dir="1" aria-label="Scroll right">›</button></div>
       </div>
       <div class="rail">
-        <figure class="slide"><img src="assets/photos/bedroom-bay.jpg" alt="Bright bedroom with a bay window and study desk"><span class="cap-tag">Bay-window room</span></figure>
-        <figure class="slide"><img src="assets/photos/bedroom-oak.jpg" alt="Bedroom with a double bed and oak wardrobe"><span class="cap-tag">Double room</span></figure>
-        <figure class="slide"><img src="assets/photos/bedroom-loft.jpg" alt="Cosy loft bedroom"><span class="cap-tag">Loft room</span></figure>
-        <figure class="slide"><img src="assets/photos/bedroom-study.jpg" alt="Bedroom study corner with desk and chair"><span class="cap-tag">Study space</span></figure>
+        <figure class="slide"><img src="assets/photos/bedroom-bay.jpg" data-cap="A bright bay-window room, with a desk to call your own." alt="Bright bedroom with a bay window and study desk"><span class="cap-tag">Bay-window room</span></figure>
+        <figure class="slide"><img src="assets/photos/bedroom-oak.jpg" data-cap="A calm, comfortable double room to settle into." alt="Bedroom with a double bed and oak wardrobe"><span class="cap-tag">Double room</span></figure>
+        <figure class="slide"><img src="assets/photos/bedroom-loft.jpg" data-cap="A cosy loft room — private, and yours to personalise." alt="Cosy loft bedroom"><span class="cap-tag">Loft room</span></figure>
+        <figure class="slide"><img src="assets/photos/bedroom-study.jpg" data-cap="Space to study, dream and plan for what comes next." alt="Bedroom study corner with desk and chair"><span class="cap-tag">Study space</span></figure>
       </div>
     </div>
 
     <!-- Outside -->
-    <div class="tour">
+    <div class="tour" data-reveal>
       <div class="tour-head">
         <div class="tour-label"><span class="t">Outside</span><span class="d">A private garden &amp; a characterful street</span></div>
         <div class="rail-nav"><button type="button" data-dir="-1" aria-label="Scroll left">‹</button><button type="button" data-dir="1" aria-label="Scroll right">›</button></div>
       </div>
       <div class="rail">
-        <figure class="slide"><img src="assets/photos/garden.jpg" alt="Private enclosed rear garden with lawn and fencing"><span class="cap-tag">Enclosed rear garden</span></figure>
-        <figure class="slide"><img src="assets/photos/exterior-street.jpg" alt="The front of the home seen from the street"><span class="cap-tag">Street view</span></figure>
-        <figure class="slide"><img src="assets/photos/exterior-gable.jpg" alt="Period gable and timber detailing"><span class="cap-tag">Period character</span></figure>
-        <figure class="slide"><img src="assets/photos/exterior-detail.jpg" alt="Tudor-style timber and brick detail"><span class="cap-tag">Architecture</span></figure>
+        <figure class="slide"><img src="assets/photos/garden.jpg" data-cap="A private, enclosed garden — fresh air and room to breathe." alt="Private enclosed rear garden with lawn and fencing"><span class="cap-tag">Enclosed rear garden</span></figure>
+        <figure class="slide"><img src="assets/photos/exterior-street.jpg" data-cap="Set back behind wrought-iron gates on a quiet, tree-lined street." alt="The front of the home seen from the street"><span class="cap-tag">Street view</span></figure>
+        <figure class="slide"><img src="assets/photos/exterior-gable.jpg" data-cap="Period timber gables and red brick — a house full of character." alt="Period gable and timber detailing"><span class="cap-tag">Period character</span></figure>
+        <figure class="slide"><img src="assets/photos/exterior-detail.jpg" data-cap="Original detailing, carefully kept." alt="Tudor-style timber and brick detail"><span class="cap-tag">Architecture</span></figure>
       </div>
     </div>
   </div>
@@ -232,14 +233,14 @@
 <!-- ===== OUR APPROACH ===== -->
 <section id="approach">
   <div class="wrap">
-    <div class="head">
+    <div class="head" data-reveal>
       <p class="eyebrow">Our approach</p>
       <h2>Warm, structured &amp; trauma-informed</h2>
       <p class="lead" style="margin-top:22px;">We understand that behaviour is communication, and that
         trusting relationships are the foundation of every positive change. Four principles shape
         everything we do.</p>
     </div>
-    <div class="grid-2" style="gap:22px;">
+    <div class="grid-2" style="gap:22px;" data-stagger>
       <div class="vcard"><div class="n">01 — Safety</div><h3>Safety &amp; stability</h3>
         <p>Consistent routines, clear boundaries and a calm, predictable home where young people know,
           every day, that they are safe and cared for.</p></div>
@@ -259,14 +260,14 @@
 <!-- ===== CARE & TEAM ===== -->
 <section class="sec-navy" id="care">
   <div class="wrap">
-    <div class="head">
+    <div class="head" data-reveal>
       <p class="eyebrow">Care &amp; team</p>
       <h2>Skilled people, around the clock</h2>
       <p class="lead" style="margin-top:22px;">A stable, experienced staff team provides warm, boundaried
         care every hour of every day, guided by each young person's individual plan.</p>
     </div>
 
-    <div class="split top" style="gap:52px;">
+    <div class="split top" style="gap:52px;" data-reveal>
       <div>
         <h3 style="margin-bottom:18px;">How we care</h3>
         <ul class="ticks">
@@ -291,7 +292,7 @@
       </div>
     </div>
 
-    <div class="grid-3" style="margin-top:48px;">
+    <div class="grid-3" style="margin-top:48px;" data-stagger>
       <div class="stat"><div class="big">24/7</div><p>Supervision &amp; support, every day of the year</p></div>
       <div class="stat"><div class="big">1:1</div><p>Staffing throughout the day for continuity of care</p></div>
       <div class="stat"><div class="big">11–18</div><p>The ages we care for, across the EBD spectrum</p></div>
@@ -302,7 +303,7 @@
 <!-- ===== EDUCATION ===== -->
 <section id="education">
   <div class="wrap">
-    <div class="split top">
+    <div class="split top" data-reveal>
       <div>
         <p class="eyebrow">Education &amp; aspirations</p>
         <h2>Helping young people reach further</h2>
@@ -327,7 +328,7 @@
 <!-- ===== SAFEGUARDING ===== -->
 <section class="sec-cream" id="safeguarding">
   <div class="wrap">
-    <div class="split top">
+    <div class="split top" data-reveal>
       <div>
         <p class="eyebrow">Safeguarding &amp; quality</p>
         <h2>Keeping young people safe is everything</h2>
@@ -365,13 +366,13 @@
 <!-- ===== REFERRALS ===== -->
 <section id="referrals">
   <div class="wrap">
-    <div class="head">
+    <div class="head" data-reveal>
       <p class="eyebrow">Making a referral</p>
       <h2>Working in partnership with you</h2>
       <p class="lead" style="margin-top:22px;">We welcome enquiries from local authorities and placing teams.
         Our process is straightforward, responsive and focused on the right match for each young person.</p>
     </div>
-    <div class="steps">
+    <div class="steps" data-stagger>
       <div class="step"><h4>Enquiry</h4><p>Contact our team with the young person's referral information.</p></div>
       <div class="step"><h4>Assessment</h4><p>We review the referral to be sure we can meet their needs and keep everyone safe.</p></div>
       <div class="step"><h4>Matching</h4><p>We agree a placement plan, impact-risk assessment and transition approach.</p></div>
@@ -380,10 +381,54 @@
   </div>
 </section>
 
+<!-- ===== LOCATION / MAP ===== -->
+<section id="location">
+  <div class="wrap">
+    <div class="split top" data-reveal>
+      <div>
+        <p class="eyebrow">Where we are</p>
+        <h2>A settled corner of Nottingham</h2>
+        <p class="lead" style="margin-top:22px;">Set on a quiet, tree-lined residential street, with the
+          city, its schools and its green spaces all close at hand.</p>
+        <ul class="ticks" style="margin-top:8px;">
+          <li>Local schools, colleges &amp; education providers nearby</li>
+          <li>Bus &amp; tram links right across the city</li>
+          <li>Parks, leisure centres &amp; community facilities close by</li>
+          <li>Health services &amp; GP surgeries within easy reach</li>
+        </ul>
+        <p style="margin:22px 0 20px;"><b>4 Tavistock Drive, Nottingham, NG3&nbsp;5DW</b></p>
+        <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=4+Tavistock+Drive,+Nottingham+NG3+5DW"
+           target="_blank" rel="noopener">Get directions →</a>
+      </div>
+      <div class="col-img">
+        <div class="map-frame">
+          <iframe title="Map showing Tavistock Homes, 4 Tavistock Drive, Nottingham NG3 5DW"
+            src="https://maps.google.com/maps?q=4%20Tavistock%20Drive%2C%20Nottingham%20NG3%205DW&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          <div class="map-pin">
+            <svg class="em2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <clipPath id="emMap"><circle cx="50" cy="50" r="48"/></clipPath>
+              <g clip-path="url(#emMap)">
+                <rect width="100" height="100" fill="#1b1b6b"/><rect width="100" height="52" fill="#0068b0"/>
+                <rect x="0" y="47" width="16" height="41" fill="#0a7f92"/><rect x="84" y="47" width="16" height="41" fill="#0a7f92"/>
+                <path d="M50 18 L85 49 L75 49 L75 85 L25 85 L25 49 L15 49 Z" fill="#1b1b6b"/>
+                <rect x="43" y="57" width="14" height="27" fill="#0a7f92"/>
+                <path d="M50 18 L85 49 L75 49 L75 85 L25 85 L25 49 L15 49 Z" fill="none" stroke="#fff" stroke-width="2.6" stroke-linejoin="round"/>
+                <rect x="43" y="57" width="14" height="27" fill="none" stroke="#fff" stroke-width="2.2"/>
+              </g>
+            </svg>
+            <span><b>Tavistock&nbsp;Homes</b><span>4 Tavistock Drive · NG3&nbsp;5DW</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ===== CONTACT ===== -->
 <section class="sec-cream" id="contact">
   <div class="wrap">
-    <div class="contact-card">
+    <div class="contact-card" data-reveal>
       <div>
         <p class="eyebrow">Talk to us</p>
         <h2>Enquire about a placement</h2>
@@ -411,7 +456,7 @@
 <!-- ===== FOOTER ===== -->
 <footer class="site-footer">
   <div class="wrap">
-    <div class="footer-top">
+    <div class="footer-top" data-reveal>
       <div class="fcol">
         <svg class="emblem" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <clipPath id="emFoot"><circle cx="50" cy="50" r="48"/></clipPath>
@@ -439,7 +484,7 @@
         <ul class="fnav">
           <li><a href="#welcome">Welcome</a></li>
           <li><a href="#inside">Step inside</a></li>
-          <li><a href="#approach">Our approach</a></li>
+          <li><a href="gallery.html">Photo gallery</a></li>
           <li><a href="#safeguarding">Safeguarding &amp; Ofsted</a></li>
           <li><a href="#referrals">Make a referral</a></li>
         </ul>
@@ -490,25 +535,36 @@
     });
   });
 
-  // ----- lightbox -----
-  var imgs = [].slice.call(document.querySelectorAll('.slide img'));
-  var lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg'),
-      lbCap = document.getElementById('lbCap'), idx = 0;
-  function show(i){ idx = (i + imgs.length) % imgs.length; lbImg.src = imgs[idx].src;
-    lbImg.alt = imgs[idx].alt; lbCap.textContent = imgs[idx].alt; }
-  function open(i){ show(i); lb.classList.add('open'); lb.setAttribute('aria-hidden','false'); }
-  function close(){ lb.classList.remove('open'); lb.setAttribute('aria-hidden','true'); lbImg.src=''; }
-  imgs.forEach(function(im, i){ im.addEventListener('click', function(){ open(i); }); });
-  document.getElementById('lbNext').addEventListener('click', function(e){ e.stopPropagation(); show(idx+1); });
-  document.getElementById('lbPrev').addEventListener('click', function(e){ e.stopPropagation(); show(idx-1); });
-  document.getElementById('lbClose').addEventListener('click', close);
-  lb.addEventListener('click', function(e){ if (e.target === lb) close(); });
-  document.addEventListener('keydown', function(e){
-    if (!lb.classList.contains('open')) return;
-    if (e.key === 'Escape') close();
-    else if (e.key === 'ArrowRight') show(idx+1);
-    else if (e.key === 'ArrowLeft') show(idx-1);
-  });
+  // ----- lightbox (shared by index + gallery) -----
+  var imgs = [].slice.call(document.querySelectorAll('img[data-cap]'));
+  var lb = document.getElementById('lb');
+  if (lb && imgs.length){
+    var lbImg = document.getElementById('lbImg'), lbCap = document.getElementById('lbCap'), idx = 0;
+    function show(i){ idx = (i + imgs.length) % imgs.length; lbImg.src = imgs[idx].src;
+      lbImg.alt = imgs[idx].alt; lbCap.textContent = imgs[idx].getAttribute('data-cap') || imgs[idx].alt; }
+    function open(i){ show(i); lb.classList.add('open'); lb.setAttribute('aria-hidden','false'); }
+    function close(){ lb.classList.remove('open'); lb.setAttribute('aria-hidden','true'); lbImg.src=''; }
+    imgs.forEach(function(im, i){ im.style.cursor = 'zoom-in'; im.addEventListener('click', function(){ open(i); }); });
+    document.getElementById('lbNext').addEventListener('click', function(e){ e.stopPropagation(); show(idx+1); });
+    document.getElementById('lbPrev').addEventListener('click', function(e){ e.stopPropagation(); show(idx-1); });
+    document.getElementById('lbClose').addEventListener('click', close);
+    lb.addEventListener('click', function(e){ if (e.target === lb) close(); });
+    document.addEventListener('keydown', function(e){
+      if (!lb.classList.contains('open')) return;
+      if (e.key === 'Escape') close();
+      else if (e.key === 'ArrowRight') show(idx+1);
+      else if (e.key === 'ArrowLeft') show(idx-1);
+    });
+  }
+
+  // ----- scroll reveal -----
+  var rev = [].slice.call(document.querySelectorAll('[data-reveal],[data-stagger]'));
+  if ('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold:0.12, rootMargin:'0px 0px -6% 0px' });
+    rev.forEach(function(el){ io.observe(el); });
+  } else { rev.forEach(function(el){ el.classList.add('in'); }); }
 </script>
 
 </body>

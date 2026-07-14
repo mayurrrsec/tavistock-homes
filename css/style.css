@@ -283,6 +283,58 @@ ul.ticks li::after{ content:""; position:absolute; left:5.5px; top:9.5px; width:
   flex-wrap:wrap; padding-top:24px; }
 .footer-bot .legal{ color:#767E8C; letter-spacing:.08em; text-transform:uppercase; font-size:11px; line-height:1.9; }
 
+/* ---------- scroll reveal ---------- */
+.js [data-reveal]{ opacity:0; transform:translateY(22px); }
+.js [data-reveal].in{ opacity:1; transform:none; transition:opacity .6s ease, transform .6s ease; }
+.js [data-stagger] > *{ opacity:0; transform:translateY(18px); }
+.js [data-stagger].in > *{ opacity:1; transform:none; transition:opacity .55s ease, transform .55s ease; }
+.js [data-stagger].in > *:nth-child(2){ transition-delay:.08s; }
+.js [data-stagger].in > *:nth-child(3){ transition-delay:.16s; }
+.js [data-stagger].in > *:nth-child(4){ transition-delay:.24s; }
+@media (prefers-reduced-motion:reduce){
+  .js [data-reveal],.js [data-stagger] > *{ opacity:1 !important; transform:none !important; transition:none !important; }
+}
+
+/* ---------- location / map ---------- */
+.map-frame{ position:relative; border-radius:16px; overflow:hidden; border:1px solid var(--line);
+  box-shadow:0 18px 44px rgba(20,25,40,.14); height:440px; background:#e9e3d6; }
+.map-frame iframe{ width:100%; height:100%; border:0; display:block; }
+.map-pin{ position:absolute; left:16px; top:16px; background:#fff; border:1px solid var(--line);
+  border-radius:12px; padding:10px 14px; box-shadow:0 12px 30px rgba(20,25,40,.18); display:flex;
+  gap:11px; align-items:center; max-width:calc(100% - 32px); }
+.map-pin .em2{ width:32px; height:32px; flex:none; }
+.map-pin b{ display:block; font-family:'Fraunces',serif; color:var(--navy); font-size:14px; line-height:1.2; }
+.map-pin span{ color:var(--muted); font-size:12.5px; }
+
+/* ---------- gallery page ---------- */
+.page-intro{ background:
+    radial-gradient(900px 380px at 15% -20%, #fff 0%, transparent 60%),
+    linear-gradient(180deg,var(--paper) 0%, var(--cream) 100%);
+  padding:58px 0 44px; border-bottom:1px solid var(--line); }
+.page-intro h1{ font-size:clamp(34px,5vw,52px); margin:14px 0 0; letter-spacing:-.01em; }
+.page-intro h1 em{ font-style:italic; color:var(--gold-deep); font-weight:500; }
+.page-intro .lead{ margin-top:18px; max-width:620px; }
+.back-link{ display:inline-flex; align-items:center; gap:7px; font-size:14px; font-weight:600;
+  color:var(--gold-deep); text-decoration:none; margin-bottom:6px; }
+.back-link:hover{ color:var(--navy); }
+.gsec{ margin-top:56px; }
+.gsec:first-of-type{ margin-top:6px; }
+.gtitle{ display:flex; align-items:baseline; gap:14px; flex-wrap:wrap; margin:0 0 22px;
+  padding-bottom:14px; border-bottom:1px solid var(--line); }
+.gtitle .t{ font-family:'Fraunces',serif; font-size:25px; color:var(--navy); font-weight:600; }
+.gtitle .d{ font-size:15px; color:var(--muted); }
+.ggrid{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+.gitem{ margin:0; }
+.gitem .ph{ border-radius:14px; overflow:hidden; position:relative; cursor:zoom-in; aspect-ratio:4/3;
+  box-shadow:0 10px 26px rgba(20,25,40,.12); background:#e9e3d6; }
+.gitem .ph img{ width:100%; height:100%; object-fit:cover; transition:transform .5s ease; }
+.gitem .ph:hover img{ transform:scale(1.05); }
+.gitem .ph::after{ content:"\2922"; position:absolute; top:12px; right:12px; width:30px; height:30px;
+  border-radius:50%; background:rgba(17,29,49,.55); color:#fff; font-size:15px; display:flex;
+  align-items:center; justify-content:center; opacity:0; transition:opacity .2s; }
+.gitem .ph:hover::after{ opacity:1; }
+.gitem figcaption{ font-size:14.5px; color:var(--muted); margin-top:12px; line-height:1.5; }
+
 /* ---------- responsive ---------- */
 @media (max-width:940px){
   .hero-grid,.split,.mani-grid,.contact-card,.footer-top{ grid-template-columns:1fr; }
@@ -298,6 +350,8 @@ ul.ticks li::after{ content:""; position:absolute; left:5.5px; top:9.5px; width:
   .grid-3,.steps{ grid-template-columns:1fr 1fr; }
   .slide{ height:290px; }
   .slide.note{ width:320px; }
+  .ggrid{ grid-template-columns:1fr 1fr; }
+  .map-frame{ height:360px; }
   .contact-card{ padding:40px 32px; }
   .reg-card .row{ }
   /* mobile nav */
@@ -319,6 +373,7 @@ ul.ticks li::after{ content:""; position:absolute; left:5.5px; top:9.5px; width:
   .grid-2,.grid-3,.steps{ grid-template-columns:1fr; }
   .slide{ height:230px; }
   .slide.note{ width:80vw; }
+  .ggrid{ grid-template-columns:1fr; }
   .facts .wrap{ grid-template-columns:1fr 1fr; }
   .contact-card{ padding:30px 24px; }
   .reg-card{ padding:24px; }
