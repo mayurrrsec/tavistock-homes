@@ -204,8 +204,8 @@
     var lbImg = document.getElementById('lbImg'), lbCap = document.getElementById('lbCap'), idx = 0;
     function show(i){ idx = (i + imgs.length) % imgs.length; lbImg.src = imgs[idx].src;
       lbImg.alt = imgs[idx].alt; lbCap.textContent = imgs[idx].getAttribute('data-cap') || imgs[idx].alt; }
-    function open(i){ show(i); lb.classList.add('open'); lb.setAttribute('aria-hidden','false'); }
-    function close(){ lb.classList.remove('open'); lb.setAttribute('aria-hidden','true'); lbImg.src=''; }
+    function open(i){ show(i); lb.classList.add('open'); document.body.classList.add('lb-open'); lb.setAttribute('aria-hidden','false'); }
+    function close(){ lb.classList.remove('open'); document.body.classList.remove('lb-open'); lb.setAttribute('aria-hidden','true'); lbImg.src=''; }
     imgs.forEach(function(im, i){ im.addEventListener('click', function(){ open(i); }); });
     document.getElementById('lbNext').addEventListener('click', function(e){ e.stopPropagation(); show(idx+1); });
     document.getElementById('lbPrev').addEventListener('click', function(e){ e.stopPropagation(); show(idx-1); });

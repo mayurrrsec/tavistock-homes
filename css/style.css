@@ -220,9 +220,10 @@ ul.ticks li::after{ content:""; position:absolute; left:5.5px; top:9.5px; width:
   font-size:12px; letter-spacing:.03em; padding:6px 12px; border-radius:30px; backdrop-filter:blur(4px); z-index:2; }
 
 /* lightbox */
-.lightbox{ position:fixed; inset:0; z-index:100; background:rgba(11,17,32,.93); display:none;
+.lightbox{ position:fixed; inset:0; z-index:200; background:#0b1220; display:none;
   align-items:center; justify-content:center; padding:30px; }
 .lightbox.open{ display:flex; }
+body.lb-open{ overflow:hidden; }
 .lightbox img{ max-width:92vw; max-height:84vh; border-radius:10px; box-shadow:0 30px 80px rgba(0,0,0,.55); }
 .lb-btn{ position:absolute; background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.3);
   color:#fff; width:52px; height:52px; border-radius:50%; font-size:26px; line-height:1; cursor:pointer;
