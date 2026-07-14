@@ -189,6 +189,10 @@ ul.ticks li::after{ content:""; position:absolute; left:5.5px; top:9.5px; width:
 .tour-label .t{ font-family:'Fraunces',serif; font-size:24px; color:var(--navy); font-weight:600; }
 .tour-label .d{ font-size:15px; color:var(--muted); }
 .rail-nav{ display:flex; gap:9px; flex:none; }
+.swipe-hint{ display:none; align-items:center; gap:7px; font-size:12.5px; font-weight:600;
+  letter-spacing:.02em; color:var(--muted); white-space:nowrap; }
+.swipe-hint .ar{ display:inline-block; animation:nudge 1.4s ease-in-out infinite; }
+@keyframes nudge{ 0%,100%{ transform:translateX(0); } 50%{ transform:translateX(5px); } }
 .rail-nav button{ width:42px; height:42px; border-radius:50%; border:1px solid var(--line); background:#fff;
   color:var(--navy); font-size:20px; line-height:1; cursor:pointer; display:flex; align-items:center;
   justify-content:center; transition:.16s; }
@@ -292,8 +296,11 @@ ul.ticks li::after{ content:""; position:absolute; left:5.5px; top:9.5px; width:
 .js [data-stagger].in > *:nth-child(2){ transition-delay:.08s; }
 .js [data-stagger].in > *:nth-child(3){ transition-delay:.16s; }
 .js [data-stagger].in > *:nth-child(4){ transition-delay:.24s; }
+.js [data-stagger].in > *:nth-child(5){ transition-delay:.32s; }
+.js [data-stagger].in > *:nth-child(6){ transition-delay:.40s; }
 @media (prefers-reduced-motion:reduce){
   .js [data-reveal],.js [data-stagger] > *{ opacity:1 !important; transform:none !important; transition:none !important; }
+  .swipe-hint .ar{ animation:none; }
 }
 
 /* ---------- location / map ---------- */
@@ -396,6 +403,7 @@ ul.ticks li::after{ content:""; position:absolute; left:5.5px; top:9.5px; width:
   .grid-2,.grid-3,.steps{ grid-template-columns:1fr; }
   .tour-head{ align-items:flex-start; }
   .rail-nav{ display:none; }
+  .swipe-hint{ display:inline-flex; }
   .slide{ height:230px; }
   .slide img{ width:82vw; height:100%; object-fit:cover; }
   .slide.note{ width:80vw; }
