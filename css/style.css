@@ -390,8 +390,10 @@ body.lb-open{ overflow:hidden; }
     flex-direction:column; align-items:stretch; justify-content:flex-start; background:var(--paper);
     gap:0; overflow-y:auto; overscroll-behavior:contain;
     padding:14px 26px calc(26px + env(safe-area-inset-bottom));
-    transform:translateX(100%); transition:transform .32s cubic-bezier(.4,0,.2,1); }
-  .nav-links.open{ transform:none; }
+    opacity:0; visibility:hidden; transform:translateY(-12px);
+    transition:opacity .26s ease, transform .26s ease, visibility 0s linear .26s; }
+  .nav-links.open{ opacity:1; visibility:visible; transform:translateY(0);
+    transition:opacity .26s ease, transform .26s ease; }
   .nav-links li{ border-bottom:1px solid var(--line-2); }
   .nav-links a:not(.btn){ display:block; padding:18px 2px; font-size:20px; font-weight:500; color:var(--navy); }
   .nav-links a:not(.btn)::after{ display:none; }
