@@ -1,8 +1,8 @@
-/* ============================================================
+/* ------------------------------------------------------------
    TAVISTOCK HOMES — WEBSITE  (editorial redesign)
    Static, self-contained. Brand DNA of the brochure, fresh layout.
    Palette: navy / gold / sage / cream.  Fraunces + Inter (local).
-   ============================================================ */
+   ------------------------------------------------------------ */
 
 @font-face{ font-family:'Fraunces'; src:url('../fonts/Fraunces.ttf'); font-weight:100 900; font-style:normal; font-display:swap; }
 @font-face{ font-family:'Inter';    src:url('../fonts/Inter.ttf');    font-weight:100 900; font-style:normal; font-display:swap; }
