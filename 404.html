@@ -7,19 +7,32 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%231b1b6b'/%3E%3Crect y='4' width='100' height='48' fill='%230068b0'/%3E%3Cpath d='M50 18 L85 49 L75 49 L75 85 L25 85 L25 49 L15 49 Z' fill='%231b1b6b' stroke='%23fff' stroke-width='3' stroke-linejoin='round'/%3E%3Crect x='43' y='57' width='14' height='27' fill='%230a7f92' stroke='%23fff' stroke-width='2.4'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="css/style.css">
 <style>
-  .nf{ min-height:80vh; display:flex; flex-direction:column; align-items:center; justify-content:center;
-    text-align:center; padding:60px 24px; }
-  .nf h1{ font-size:clamp(40px,8vw,72px); color:var(--navy); }
+  .nf{ min-height:82vh; display:flex; flex-direction:column; align-items:center; justify-content:center;
+    text-align:center; padding:60px 24px; background:
+      radial-gradient(1000px 460px at 50% -10%, #fff 0%, transparent 60%),
+      linear-gradient(180deg,var(--paper) 0%, var(--cream) 100%); }
+  .nf .emblem{ width:64px; height:64px; margin-bottom:24px; }
+  .nf h1{ font-size:clamp(40px,8vw,72px); color:var(--navy); margin:0; }
+  .nf .lead{ max-width:520px; margin:18px 0 30px; }
 </style>
 </head>
 <body>
   <div class="nf">
-    <p class="eyebrow">Tavistock Homes</p>
+    <svg class="emblem" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <clipPath id="em404"><circle cx="50" cy="50" r="48"/></clipPath>
+      <g clip-path="url(#em404)">
+        <rect width="100" height="100" fill="#1b1b6b"/><rect width="100" height="52" fill="#0068b0"/>
+        <rect x="0" y="47" width="16" height="41" fill="#0a7f92"/><rect x="84" y="47" width="16" height="41" fill="#0a7f92"/>
+        <path d="M50 18 L85 49 L75 49 L75 85 L25 85 L25 49 L15 49 Z" fill="#1b1b6b"/>
+        <rect x="43" y="57" width="14" height="27" fill="#0a7f92"/>
+        <path d="M50 18 L85 49 L75 49 L75 85 L25 85 L25 49 L15 49 Z" fill="none" stroke="#fff" stroke-width="2.6" stroke-linejoin="round"/>
+        <rect x="43" y="57" width="14" height="27" fill="none" stroke="#fff" stroke-width="2.2"/>
+      </g>
+    </svg>
+    <p class="eyebrow c">Tavistock Homes</p>
     <h1>Page not found</h1>
-    <hr class="rule center">
-    <p class="lead" style="max-width:520px;">Sorry — the page you were looking for isn't here.
-      Let's get you back home.</p>
-    <a class="btn btn-lg" href="/" style="margin-top:10px;">Back to home</a>
+    <p class="lead">Sorry — the page you were looking for isn't here. Let's get you back home.</p>
+    <a class="btn btn-lg" href="/">Back to home</a>
   </div>
 </body>
 </html>

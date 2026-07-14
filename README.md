@@ -1,15 +1,17 @@
 # Tavistock Homes — Website
 
-A fast, self-contained **static website** built from the brochure's brand, copy and photos.
-One responsive page (Home · About · Our Home · Inside · Our Care · Education · Safeguarding ·
-Referrals · Contact), plus a matching 404 page.
+A fast, self-contained **static website** — a warm, editorial, photography-led design that keeps the
+brochure's brand DNA but has its own layout and voice. One responsive page (Welcome · Step inside ·
+Our approach · Care & team · Education · Safeguarding · Referrals · Contact), plus a matching 404 page.
 
 - **No build step, no database, no framework.** Just HTML + CSS + your images and fonts.
 - **Fully portable** — open `index.html` to preview offline, or drop the whole folder onto any host
   (Cloudflare Pages, GitHub Pages, Netlify, or your GetDotted/Freeola web space). Deploys the same
   everywhere, so we're never locked to one host.
-- **Same identity as the brochure** — navy/gold/sage/cream palette, Fraunces + Inter (local fonts),
-  the vector logo, and the Ofsted URN 2886899 registration details.
+- **Photography-led** — a split editorial hero, a "You belong here" manifesto band (the real words
+  from the kitchen wall), and a room-by-room photo tour (living spaces · kitchen · bedrooms · garden).
+- **Brand DNA of the brochure** — navy/gold/sage/cream palette, Fraunces + Inter (local fonts),
+  the vector emblem, and the Ofsted URN 2886899 registration details.
 
 ## Folder contents
 ```
@@ -18,7 +20,9 @@ website/
 ├─ 404.html          ← friendly "page not found"
 ├─ css/style.css     ← all styling (responsive; mobile menu built in)
 ├─ fonts/            ← Fraunces + Inter (local, OFL)
-└─ assets/           ← photos + assets/brand/ (logo source files)
+└─ assets/
+   ├─ photos/        ← optimised site photography (16 images)
+   └─ brand/         ← logo source files
 ```
 
 ## Preview locally
