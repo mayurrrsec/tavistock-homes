@@ -104,9 +104,9 @@
 <!-- ===== FACTS STRIP ===== -->
 <div class="facts">
   <div class="wrap" data-stagger>
-    <div class="fact"><b>11–18</b><span>Young men &amp; women we care for</span></div>
+    <div class="fact"><b>11–18</b><span>Young male and female residents we care for</span></div>
     <div class="fact"><b>24/7</b><span>Waking, around-the-clock care</span></div>
-    <div class="fact"><b>3</b><span>Private single bedrooms</span></div>
+    <div class="fact"><b>Bedrooms</b><span>Comfortable rooms to make their own</span></div>
     <div class="fact"><b>Ofsted</b><span>Registered · URN 2886899</span></div>
   </div>
 </div>
@@ -203,13 +203,13 @@
     <!-- Bedrooms -->
     <div class="tour" data-reveal>
       <div class="tour-head">
-        <div class="tour-label"><span class="t">Private bedrooms</span><span class="d">A room of their own to make their own</span></div>
+        <div class="tour-label"><span class="t">Bedrooms</span><span class="d">A room of their own to make their own</span></div>
         <div class="rail-nav"><button type="button" data-dir="-1" aria-label="Scroll left">‹</button><button type="button" data-dir="1" aria-label="Scroll right">›</button></div>
       </div>
       <div class="rail">
         <figure class="slide"><img src="assets/photos/bedroom-bay.jpg" data-cap="A bright bay-window room, with a desk to call your own." alt="Bright bedroom with a bay window and study desk"><span class="cap-tag">Bay-window room</span></figure>
         <figure class="slide"><img src="assets/photos/bedroom-oak.jpg" data-cap="A calm, comfortable double room to settle into." alt="Bedroom with a double bed and oak wardrobe"><span class="cap-tag">Double room</span></figure>
-        <figure class="slide"><img src="assets/photos/bedroom-loft.jpg" data-cap="A cosy loft room — private, and yours to personalise." alt="Cosy loft bedroom"><span class="cap-tag">Loft room</span></figure>
+        <figure class="slide"><img src="assets/photos/bedroom-loft.jpg" data-cap="A cosy loft room to personalise and settle into." alt="Cosy loft bedroom with soft furnishings"><span class="cap-tag">Loft room</span></figure>
         <figure class="slide"><img src="assets/photos/bedroom-study.jpg" data-cap="Space to study, dream and plan for what comes next." alt="Bedroom study corner with desk and chair"><span class="cap-tag">Study space</span></figure>
       </div>
     </div>
@@ -522,7 +522,7 @@
     t.setAttribute('aria-expanded', open ? 'true' : 'false');
   });
   links.addEventListener('click', function(e){
-    if (e.target.tagName === 'A'){ links.classList.remove('open'); t.classList.remove('on'); }
+    if (e.target.tagName === 'A'){ links.classList.remove('open'); t.classList.remove('on'); t.setAttribute('aria-expanded','false'); }
   });
 
   // ----- photo rails: arrow scrolling -----
