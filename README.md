@@ -11,7 +11,7 @@ Our approach · Care & team · Education · Safeguarding · Referrals · Contact
 - **Photography-led** — a split editorial hero, a "You belong here" manifesto band (the real words
   from the kitchen wall), and a room-by-room photo tour (living spaces · kitchen · bedrooms · garden).
 - **Brand DNA of the brochure** — navy/gold/sage/cream palette, Fraunces + Inter (local fonts),
-  the vector emblem, and the Ofsted URN 2886899 registration details.
+  the vector emblem, and clear Ofsted registered children's home trust signals.
 
 ## Folder contents
 ```
@@ -70,4 +70,3 @@ HTTPS takes a little longer to activate):
 ## Still to add when available
 - A real quote/testimonial (Contact or Inside section).
 - Official Ofsted "Registered" logo image (currently the styled badge).
-- A Google Map embed / directions block, if wanted.
