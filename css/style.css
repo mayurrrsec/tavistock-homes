@@ -97,9 +97,6 @@ section{ padding:92px 0; }
 .hero h1{ font-size:clamp(38px,5.6vw,64px); line-height:1.04; margin:22px 0 0; letter-spacing:-.015em; }
 .hero h1 em{ font-style:italic; color:var(--gold-deep); font-weight:500; }
 .hero .sub{ font-size:clamp(17px,1.7vw,20px); color:var(--navy-ink); max-width:520px; margin:22px 0 0; }
-.hero-addr{ margin:26px 0 0; font-size:13px; letter-spacing:.16em; text-transform:uppercase;
-  color:var(--muted); display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
-.hero-addr b{ color:var(--navy); font-weight:600; }
 .hero-cta{ margin-top:30px; display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
 .hero-trust{ list-style:none; margin:30px 0 0; padding:0; display:flex; flex-wrap:wrap; gap:11px 24px; }
 .hero-trust li{ position:relative; padding-left:27px; font-size:14.5px; color:var(--navy-ink); font-weight:500; }
@@ -414,7 +411,6 @@ ul.ticks li::after{ content:""; position:absolute; left:5.5px; top:9.5px; width:
   .hero-grid{ padding:40px 18px 52px; }
   .pill{ align-items:flex-start; font-size:10.5px; letter-spacing:.08em; line-height:1.35; border-radius:18px; }
   .hero h1{ font-size:clamp(36px,12vw,48px); }
-  .hero-addr{ display:block; letter-spacing:.09em; line-height:1.8; }
   .hero-cta .btn{ width:100%; justify-content:center; }
   .hero-trust{ display:grid; gap:10px; }
   .hero-panel{ padding:18px; border-radius:16px; }
