@@ -1,0 +1,16 @@
+# Netlify configuration — static site, no build step.
+# Publishes the repo root (index.html, gallery.html, css/, assets/, fonts/).
+[build]
+  publish = "."
+  command = ""
+
+# Long-cache the fingerprint-free static assets (images/fonts) for speed.
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
